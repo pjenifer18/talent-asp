@@ -1,0 +1,26 @@
+﻿@model List<Talent.Models.Domain.CustomerModel>
+@{
+}
+
+<h1>List Customer</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>CustomerID</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+        {
+        <tr>
+            <td>@customer.CustomerId</td>
+            <td>@customer.Name</td>
+            <td>@customer.Address</td>
+            <td><a href="/Customer/View/@customer.CustomerId">View</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

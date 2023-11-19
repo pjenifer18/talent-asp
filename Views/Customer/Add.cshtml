@@ -1,0 +1,17 @@
+﻿@model Talent.Models.AddCustomerModel
+
+@{
+}
+
+<form method="post" action="">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <input type="text" class="form-control" id="address" asp-for="Address">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

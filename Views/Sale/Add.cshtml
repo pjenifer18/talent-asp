@@ -1,0 +1,21 @@
+﻿@model Talent.Models.AddSaleModel
+
+@{
+}
+
+<form method="post" action="">
+    <div class="mb-3">
+        <label class="form-label">Customer ID</label>
+        <input type="text" class="form-control" id="CustomerId" asp-for="CustomerId">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Product ID</label>
+        <input type="text" class="form-control" id="ProductId" asp-for="ProductId">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">DateSold</label>
+        <input type="date" class="form-control" id="DateSold" asp-for="DateSold">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

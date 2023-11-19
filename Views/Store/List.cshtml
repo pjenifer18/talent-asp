@@ -1,0 +1,25 @@
+﻿@model List<Talent.Models.Domain.StoreModel>
+
+
+<h1>List Store Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>StoreId</td>
+            <td>Name</td>
+            <td>Address</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var store in Model)
+        {
+            <tr>
+                <td>@store.StoreId</td>
+                <td>@store.Name</td>
+                <td>@store.Address</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

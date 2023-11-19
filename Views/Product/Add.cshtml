@@ -1,0 +1,13 @@
+﻿@model Talent.Models.AddProductModel
+
+<form method="post" action="">
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="number" class="form-control" id="price" asp-for="Price">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

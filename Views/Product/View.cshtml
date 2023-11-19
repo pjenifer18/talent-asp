@@ -1,0 +1,20 @@
+﻿@model Talent.Models.UpdateProductViewModel
+
+
+<h1>Update Product Table</h1>
+<form method="post" action="">
+    <div class="mb-3">
+        <label class="form-label">ID</label>
+        <input type="text" class="form-control" id="ProductId" asp-for="ProductId" readonly>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" asp-for="Name">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Price</label>
+        <input type="text" class="form-control" id="price" asp-for="Price">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

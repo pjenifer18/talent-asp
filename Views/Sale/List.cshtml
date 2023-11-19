@@ -1,0 +1,29 @@
+﻿@model List<Talent.Models.Domain.SaleModel>
+@{
+}
+
+<h1>List Sales Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <td>SaleId</td>
+            <td>ProductId</td>
+            <td>CustomerId</td>
+            <td>StoreId</td>
+            <td>DateSold</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sale in Model)
+        {
+        <tr>
+            <td>@sale.SaleId</td>
+            <td>@sale.ProductId</td>
+            <td>@sale.CustomerId</td>
+            <td>@sale.StoreId</td>
+            <td>@sale.DateSold</td>
+        </tr>
+        }
+    </tbody>
+</table>
